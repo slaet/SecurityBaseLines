@@ -8,3 +8,6 @@ Office Baseline and EDGE will follow later, the jason files to integrate it to I
 
 For the Missing CSP settings, that are not realy exist today, are in a detection and remidiation script to import as remediation script in intune, will fill that gap.
 (if you want you can also create config profiles with OMA-URI settings, because the CSP on the OS are there, but not as a setting in the setting catalog in Intune)
+
+
+test blabla
