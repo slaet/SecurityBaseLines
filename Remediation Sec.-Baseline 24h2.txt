@@ -1,0 +1,20 @@
+Remediation Sec.-Baseline 24h2
+
+Network\Lanman Server	Audit client does not support encryption // Enabled // HKLM\Software\Policies\Microsoft\Windows\LanmanServer!AuditClientDoesNotSupportEncryption
+Network\Lanman Server	Audit client does not support signing // Enabled // HKLM\Software\Policies\Microsoft\Windows\LanmanServer!AuditClientDoesNotSupportSigning
+Network\Lanman Server	Audit insecure guest logon // Enabled // HKLM\Software\Policies\Microsoft\Windows\LanmanServer!AuditInsecureGuestLogon
+Network\Lanman Server	Enable authentication rate limiter // Enabled // HKLM\Software\Policies\Microsoft\Windows\LanmanServer!EnableAuthRateLimiter
+Network\Lanman Server	Enable remote mailslots // Disabled // HKLM\Software\Policies\Microsoft\Windows\Bowser!EnableMailslots
+Network\Lanman Server	Mandate the maximum version of SMB // Enabled: SMB 3.1.1 // HKLM\Software\Policies\Microsoft\Windows\LanmanServer!MaxSmb2Dialect
+Network\Lanman Server	Mandate the minimum version of SMB // Enabled: SMB 3.0.0 // HKLM\Software\Policies\Microsoft\Windows\LanmanServer!MinSmb2Dialect
+Network\Lanman Server	Set authentication rate limiter delay (milliseconds) // Enabled: 2000 // HKLM\Software\Policies\Microsoft\Windows\LanmanServer!InvalidAuthenticationDelayTimeInMs
+Network\Lanman Workstation	Audit insecure guest logon // Enabled // HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation!AuditInsecureGuestLogon
+Network\Lanman Workstation	Audit server does not support encryption // Enabled // HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation!AuditServerDoesNotSupportEncryption
+Network\Lanman Workstation	Audit server does not support signing // Enabled // HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation!AuditServerDoesNotSupportSigning
+Network\Lanman Workstation	Enable remote mailslots // Disabled // HKLM\Software\Policies\Microsoft\Windows\Bowser!EnableMailslots
+Network\Lanman Workstation	Mandate the maximum version of SMB // Enabled: SMB 3.1.1 // HKLM\Software\Policies\Microsoft\Windows\LanmanServer!MaxSmb2Dialect
+Network\Lanman Workstation	Mandate the minimum version of SMB // Enabled: SMB 3.0.0 // HKLM\Software\Policies\Microsoft\Windows\LanmanServer!MinSmb2Dialect
+Network\Lanman Workstation	Require Encryption // Disable // HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation!RequireEncryption
+System	Configure the behavior of the sudo command // Enable:Disable // HKLM\Software\Policies\Microsoft\Windows\Sudo!Enabled
+Windows Components\File Explorer	Do not apply the Mark of the Web tag to files copied from insecure sources // Disable // HKLM\Software\Policies\Microsoft\Windows\Explorer!DisableMotWOnInsecurePathCopy
+Windows Components\Microsoft Defender Antivirus\Reporting	Configure whether to report Dynamic Signature dropped events // Enable // HKLM\Software\Policies\Microsoft\Windows Defender\Reporting!EnableDynamicSignatureDroppedEventReporting
