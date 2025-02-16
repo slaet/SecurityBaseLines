@@ -15,6 +15,6 @@ Network\Lanman Workstation	Enable remote mailslots // Disabled // HKLM\Software\
 Network\Lanman Workstation	Mandate the maximum version of SMB // Enabled: SMB 3.1.1 // HKLM\Software\Policies\Microsoft\Windows\LanmanServer!MaxSmb2Dialect
 Network\Lanman Workstation	Mandate the minimum version of SMB // Enabled: SMB 3.0.0 // HKLM\Software\Policies\Microsoft\Windows\LanmanServer!MinSmb2Dialect
 Network\Lanman Workstation	Require Encryption // Disable // HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation!RequireEncryption
-System	Configure the behavior of the sudo command // Enable:Disable // HKLM\Software\Policies\Microsoft\Windows\Sudo!Enabled
+# CSP av. (System	Configure the behavior of the sudo command // Enable:Disable // HKLM\Software\Policies\Microsoft\Windows\Sudo!Enabled)
 Windows Components\File Explorer	Do not apply the Mark of the Web tag to files copied from insecure sources // Disable // HKLM\Software\Policies\Microsoft\Windows\Explorer!DisableMotWOnInsecurePathCopy
 Windows Components\Microsoft Defender Antivirus\Reporting	Configure whether to report Dynamic Signature dropped events // Enable // HKLM\Software\Policies\Microsoft\Windows Defender\Reporting!EnableDynamicSignatureDroppedEventReporting
