@@ -31,8 +31,8 @@ if(-NOT (Test-Path -LiteralPath "HKLM\Software\Policies\Microsoft\Windows\Lanman
     if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation' -Name 'RequireEncryption' -ea SilentlyContinue) -eq 0) {  } else { exit 1 };
 
 #System	Configure the behavior of the sudo command // Enabled: Disabled	
- if(-NOT (Test-Path -LiteralPath "HKLM\Software\Policies\Microsoft\Windows")){ exit 1 };
-    if((Get-ItemPropertyValue -LiteralPath 'HKLM:\Software\Policies\Microsoft\Windows\Sudo' -Name 'Enabled' -ea SilentlyContinue) -eq 0) {  } else { exit 1 };
+# if(-NOT (Test-Path -LiteralPath "HKLM\Software\Policies\Microsoft\Windows")){ exit 1 };
+#    if((Get-ItemPropertyValue -LiteralPath 'HKLM:\Software\Policies\Microsoft\Windows\Sudo' -Name 'Enabled' -ea SilentlyContinue) -eq 0) {  } else { exit 1 };
 
 # Windows Components\BitLocker Drive Encryption // Disable new DMA devices when this computer is locked	Enabled
  if(-NOT (Test-Path -LiteralPath "HKLM\Software\Policies\Microsoft\FVE")){ exit 1 };
