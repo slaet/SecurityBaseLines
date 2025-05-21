@@ -1,34 +1,34 @@
 #detectionScriptContent
 
 # Network\Lanman Server // Mandate the maximum version of SMB // nabled: SMB 3.1.1
-if(-NOT (Test-Path -LiteralPath "HKLM\Software\Policies\Microsoft\Windows\LanmanServer")){ exit 1 };
-     if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanServer' -Name 'MaxSmb2Dialect' -ea SilentlyContinue) -eq 0x00000311) {  } else { exit 1 };
+#if(-NOT (Test-Path -LiteralPath "HKLM\Software\Policies\Microsoft\Windows\LanmanServer")){ exit 1 };
+     #if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanServer' -Name 'MaxSmb2Dialect' -ea SilentlyContinue) -eq 0x00000311) {  } else { exit 1 };
 # Network\Lanman Server // Mandate the maximum version of SMB // nabled: SMB 3.0.0
-    if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanServer' -Name 'MinSmb2Dialect' -ea SilentlyContinue) -eq 0x00000300) {  } else { exit 1 };
+    #if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanServer' -Name 'MinSmb2Dialect' -ea SilentlyContinue) -eq 0x00000300) {  } else { exit 1 };
 # Network\Lanman Server // Set authentication rate limiter delay (milliseconds)	Enabled: 2000
-    if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanServer' -Name 'InvalidAuthenticationDelayTimeInMs' -ea SilentlyContinue) -eq 2000) {  } else { exit 1 };
+    #if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanServer' -Name 'InvalidAuthenticationDelayTimeInMs' -ea SilentlyContinue) -eq 2000) {  } else { exit 1 };
 # Network\Lanman Servern // Audit insecure guest logon	Enabled
-    if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanServer' -Name 'AuditInsecureGuestLogon' -ea SilentlyContinue) -eq 1) {  } else { exit 1 };
+    #if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanServer' -Name 'AuditInsecureGuestLogon' -ea SilentlyContinue) -eq 1) {  } else { exit 1 };
 # Network\Lanman Server // Audit server does not support encryption	Enabled	
-    if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanServer' -Name 'AuditServerDoesNotSupportEncryption' -ea SilentlyContinue) -eq 1) {  } else { exit 1 };
+    #if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanServer' -Name 'AuditServerDoesNotSupportEncryption' -ea SilentlyContinue) -eq 1) {  } else { exit 1 };
 # Network\Lanman Server // Audit server does not support signing	Enabled
-    if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanServer' -Name 'AuditServerDoesNotSupportSigning' -ea SilentlyContinue) -eq 1) {  } else { exit 1 };
+    #if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanServer' -Name 'AuditServerDoesNotSupportSigning' -ea SilentlyContinue) -eq 1) {  } else { exit 1 };
 
 # Network\Lanman Workstation // Mandate the maximum version of SMB // nabled: SMB 3.1.1
-if(-NOT (Test-Path -LiteralPath "HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation")){ exit 1 };
-     if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation' -Name 'MaxSmb2Dialect' -ea SilentlyContinue) -eq 0x00000311) {  } else { exit 1 };
+#if(-NOT (Test-Path -LiteralPath "HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation")){ exit 1 };
+     #if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation' -Name 'MaxSmb2Dialect' -ea SilentlyContinue) -eq 0x00000311) {  } else { exit 1 };
 # Network\Lanman Workstation // Mandate the maximum version of SMB // nabled: SMB 3.0.0
-    if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation' -Name 'MinSmb2Dialect' -ea SilentlyContinue) -eq 0x00000300) {  } else { exit 1 };
+    #if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation' -Name 'MinSmb2Dialect' -ea SilentlyContinue) -eq 0x00000300) {  } else { exit 1 };
 # Network\Lanman Workstation // Audit insecure guest logon	Enabled
-    if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation' -Name 'AuditInsecureGuestLogon' -ea SilentlyContinue) -eq 1) {  } else { exit 1 };
+    #if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation' -Name 'AuditInsecureGuestLogon' -ea SilentlyContinue) -eq 1) {  } else { exit 1 };
 # Network\Lanman Workstation // Audit server does not support encryption	Enabled	
-    if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation' -Name 'AuditServerDoesNotSupportEncryption' -ea SilentlyContinue) -eq 1) {  } else { exit 1 };
+    #if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation' -Name 'AuditServerDoesNotSupportEncryption' -ea SilentlyContinue) -eq 1) {  } else { exit 1 };
 # Network\Lanman Workstation // Audit server does not support signing	Enabled
-    if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation' -Name 'AuditServerDoesNotSupportSigning' -ea SilentlyContinue) -eq 1) {  } else { exit 1 };
+    #if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation' -Name 'AuditServerDoesNotSupportSigning' -ea SilentlyContinue) -eq 1) {  } else { exit 1 };
 # Network\Lanman Workstation // Enable remote mailslots	Disabled	
-    if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\NetworkProvider' -Name 'EnableMailslots' -ea SilentlyContinue) -eq 0) {  } else { exit 1 };
+    #if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\NetworkProvider' -Name 'EnableMailslots' -ea SilentlyContinue) -eq 0) {  } else { exit 1 };
 # Network\Lanman Workstation // Require Encryption	Disabled	
-    if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation' -Name 'RequireEncryption' -ea SilentlyContinue) -eq 0) {  } else { exit 1 };
+    #if((Get-ItemPropertyValue -LiteralPath 'HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation' -Name 'RequireEncryption' -ea SilentlyContinue) -eq 0) {  } else { exit 1 };
 
 #System	Configure the behavior of the sudo command // Enabled: Disabled	
 # if(-NOT (Test-Path -LiteralPath "HKLM\Software\Policies\Microsoft\Windows")){ exit 1 };
